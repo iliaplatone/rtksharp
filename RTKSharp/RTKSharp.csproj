@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{5CB96932-5762-4174-A2A0-328BF0D4B13A}</ProjectGuid>
+    <ProjectTypeGuids>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <OutputType>Library</OutputType>
+    <LangVersion>10.0</LangVersion>
+    <AssemblyName>RTKSharp</AssemblyName>
+    <TargetFrameworkIdentifier>.NETFramework</TargetFrameworkIdentifier>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Compile Include="libRTK\armode.cs" />
+    <Compile Include="libRTK\consolesol.cs" />
+    <Compile Include="libRTK\degform.cs" />
+    <Compile Include="libRTK\eph.cs" />
+    <Compile Include="libRTK\frequency.cs" />
+    <Compile Include="libRTK\geoid.cs" />
+    <Compile Include="libRTK\gloarmode.cs" />
+    <Compile Include="libRTK\height.cs" />
+    <Compile Include="libRTK\ionoopt.cs" />
+    <Compile Include="libRTK\Native.cs" />
+    <Compile Include="libRTK\navsys.cs" />
+    <Compile Include="libRTK\nmeareq.cs" />
+    <Compile Include="libRTK\ostrfmt.cs" />
+    <Compile Include="libRTK\peer.cs" />
+    <Compile Include="libRTK\posmode.cs" />
+    <Compile Include="libRTK\postype.cs" />
+    <Compile Include="libRTK\RTK.cs" />
+    <Compile Include="libRTK\solflag.cs" />
+    <Compile Include="libRTK\solformat.cs" />
+    <Compile Include="libRTK\solstatic.cs" />
+    <Compile Include="libRTK\solstatus.cs" />
+    <Compile Include="libRTK\soltype.cs" />
+    <Compile Include="libRTK\SolutionStatusEventArgs.cs" />
+    <Compile Include="libRTK\stat.cs" />
+    <Compile Include="libRTK\strfmt.cs" />
+    <Compile Include="libRTK\strtype.cs" />
+    <Compile Include="libRTK\timeform.cs" />
+    <Compile Include="libRTK\timesys.cs" />
+    <Compile Include="libRTK\timetype.cs" />
+    <Compile Include="libRTK\tropopt.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
