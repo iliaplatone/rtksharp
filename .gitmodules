@@ -1,4 +1,4 @@
 [submodule "RTKLIB"]
 	path = RTKLIB
 	url = https://github.com/iliaplatone/RTKLIB
-	branch = librtk
+	branch = librtk_2.4.3
